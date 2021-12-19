@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Gorjeta</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div id="container">
+	<div>
+		<h1 class="titulo">Calculadora de gorjeta</h1>
+	</div>
+	<div>
+		<form class="formulario" id="formulario">
+			<label for="custo">
+				<p>Quanto ficou a conta?</p>
+			</label>
+			<p>R$ <input type="number" name="custo" id="custo" placeholder="100" class="formImput" required></p>
+			<label for="servico">
+				<p>Como foi o serviço?</p>
+			</label>
+			<p><select name="servico" id="servico" class="formSelect">
+				<option selected disabled value="">-- Escolha uma opção</option>
+				<option value="0.3">30% - Muito bom</option>
+				<option value="0.2">20% - Bom</option>
+				<option value="0.15">15% - Regular</option>
+				<option value="0.1">10% - Ruim</option>
+				<option value="0.05">5% - Muito ruim</option>
+			</select></p>
+			<label for="qtdeP">
+				<p>Quantas pessoas vão dividir a conta?</p>
+			</label>
+			<p><input type="number" name="qtdeP" id="qtdeP" placeholder="1" class="formImput" required></p>
+			<button type="submit" class="formSubmit">Calcular</button>
+		</form>
+	</div>
+	<div id="resultado">
+		Gorjeta Total:
+		R$ <span id="res">0.00</span>
+		<span id="cadaP">cada</span>
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

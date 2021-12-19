@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+	--primary-color: lightcoral;
+	--secundary-color: DimGrey;
+	--tertiary-color: GainsBoro;
+}
+
+
+body {
+	background-color: var(--primary-color);
+	font-size: 15px;
+	font-family: Lato, sans-serif;
+}
+
+#container {
+	height: 525px;
+	width: 360px;
+	margin: 50px auto;
+	background: #f7f7f7;
+	box-shadow: 5px 5px grey;
+	border-radius: 20px;
+}
+
+.titulo {
+	background: var(--tertiary-color); 
+	border-radius: 20px 20px 0 0;
+	color: var(--secundary-color);
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.formulario {
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+.formImput {
+	background: white;
+	width: 40px;
+	padding: 5px 5px 8px 8px;
+}
+
+.formImput:focus {
+	border: 3px solid var(--primary-color);
+	outline: none;
+}
+
+.formSelect {
+	background: white;
+	width: 180px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+.formSelect:focus {
+	border: 3px solid var(--primary-color);
+	outline: none;
+}
+
+.formSubmit {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 30px auto;
+	background: var(--primary-color);
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	font-size: 17px;
+	color: white;
+}
+
+#resultado {
+	font-size: 20px;
+	margin-top: 5px;
+	text-align: center;
+}
